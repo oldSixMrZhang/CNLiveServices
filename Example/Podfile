@@ -1,0 +1,15 @@
+use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://bj.gitlab.cnlive.com/ios-team/CNLiveRepos.git'
+
+platform :ios, '9.0'
+
+target 'CNLiveServices_Example' do
+  pod 'CNLiveServices', :path => '../'
+  pod 'CNLiveBeeHive'
+  target 'CNLiveServices_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
